@@ -16,7 +16,7 @@
     const getFriends = async () => {
       try {
         const { data } = await axios.get(
-          "https://game-diei.onrender.com//api/req/getfriends",
+          "https://game-diei.onrender.com/api/req/getfriends",
           { withCredentials: true }
         );
         
