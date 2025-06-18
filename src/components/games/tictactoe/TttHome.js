@@ -54,7 +54,7 @@ const TttHome = () => {
   const createRoom = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/ttt/createroom"
+        "https://game-diei.onrender.com/api/ttt/createroom"
       );
       setGid(data);
       //  toast.success("Success message!", {
