@@ -37,7 +37,7 @@ const ChessHome = () => {
       };
 
       await axios.post(
-        "http://localhost:5000/api/chess/joinroom",
+        "https://game-diei.onrender.com/api/chess/joinroom",
         {
           uId: id,
           userId: user._id,
@@ -54,7 +54,7 @@ const ChessHome = () => {
   const createRoom = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/chess/createroom"
+        "https://game-diei.onrender.com/api/chess/createroom"
       );
       setGid(data);
       //  toast.success("Success message!", {

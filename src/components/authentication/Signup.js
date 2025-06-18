@@ -38,7 +38,7 @@ const Signup = ({ setCheck }) => {
         withCredentials: true,
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/users/signup",
+        "https://game-diei.onrender.com/api/users/signup",
         { name, email, password, pic },
         config
       );
