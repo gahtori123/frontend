@@ -37,7 +37,7 @@ const TttHome = () => {
       };
 
       await axios.post(
-        "http://localhost:5000/api/ttt/joinroom",
+        "https://game-diei.onrender.com/api/ttt/joinroom",
         {
           uId: id,
           userId: user._id,
