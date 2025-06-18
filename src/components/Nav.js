@@ -34,7 +34,7 @@ const Nav = () => {
   const handleLogout = async () => {
     try {
       // Wait for the API request to complete
-      await axios.get("http://localhost:5000/api/users/logout", {
+      await axios.get("https://game-diei.onrender.com/api/users/logout", {
         withCredentials: true,
       });
 
@@ -52,7 +52,7 @@ const Nav = () => {
     if (query.length === 0) return;
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/users/list?search=${query}`,
+        `https://game-diei.onrender.com/api/users/list?search=${query}`,
         { withCredentials: true }
       );
 
@@ -72,7 +72,7 @@ const Nav = () => {
     };
     try {
       await axios.post(
-        "http://localhost:5000/api/req/send",
+        "https://game-diei.onrender.com/api/req/send",
         { recieverId },
         config
       );
@@ -87,7 +87,7 @@ const Nav = () => {
   const fetchRequests = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/req/getrequests",
+        "https://game-diei.onrender.com/api/req/getrequests",
         {
           withCredentials: true,
         }
@@ -107,7 +107,7 @@ const Nav = () => {
     };
     try {
       const data = await axios.post(
-        "http://localhost:5000/api/req/accept",
+        "https://game-diei.onrender.com/api/req/accept",
         { requestId },
         config
       );
@@ -131,7 +131,7 @@ const Nav = () => {
 
     try {
       const { response } = await axios.post(
-        "http://localhost:5000/api/req/reject",
+        "https://game-diei.onrender.com/api/req/reject",
         { requestId },
         config
       );

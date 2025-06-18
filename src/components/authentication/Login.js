@@ -35,7 +35,7 @@ const Login = ({ setCheck }) => {
       };
 
       const  {data} = await axios.post(
-        "http://localhost:5000/api/users/login",
+        "https://game-diei.onrender.com/api/users/login",
         { email, password },
         config
       );

@@ -10,7 +10,7 @@ import "./ChessPlay.css"; // Add CSS for layout
 import GameOverPage from "../../../utils/GameOverPage";
 
 const Chessplay = () => {
-  const ENDPOINT = "http://localhost:5000/chess";
+  const ENDPOINT = "https://game-diei.onrender.com/chess";
   const { id } = useParams();
 
   const [user, setUser] = useState(null);
