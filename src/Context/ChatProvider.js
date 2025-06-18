@@ -16,7 +16,7 @@
     const getFriends = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/req/getfriends",
+          "https://game-1-91ox.onrender.com/api/req/getfriends",
           { withCredentials: true }
         );
         
@@ -34,7 +34,7 @@
       getFriends();
 
       // Initialize and manage the socket connection
-      const newSocket = io("http://localhost:5000"); // Update URL if needed
+      const newSocket = io("https://game-1-91ox.onrender.com"); // Update URL if needed
       setSocket(newSocket);
 
       // Event listeners
